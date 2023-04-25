@@ -17,9 +17,9 @@ public class TodoistController {
 	
 	
 	
-	@GetMapping("/list")
+	@GetMapping("/todoist")
 	public List<TodoistData> findingAList(){
-		List<TodoistData> allList = todoistService.findAllListData();
-		return allList;
+		List<TodoistData> todoist = todoistService.findAllListData();
+		return todoist;
 	}
 }
