@@ -9,32 +9,26 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name = "todoist")
-public class Todoist_Data {
+public class TodoistData {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name = "task_number")
 	private int taskNumber;
-	
+
 	@Column(name = "task_tital")
 	private String taskTital;
-	
+
 	@Column(name = "add_Task")
 	private String addTask;
-	
+
 	@Column(name = "status")
 	private String status;
-	
-	
-	
-	
-	
-	
 
-	public Todoist_Data() {
-		
+	public TodoistData() {
+
 	}
 
-	public Todoist_Data(String taskTital, String addTask, String status) {
+	public TodoistData(String taskTital, String addTask, String status) {
 		super();
 		this.taskTital = taskTital;
 		this.addTask = addTask;
@@ -72,7 +66,5 @@ public class Todoist_Data {
 	public void setStatus(String status) {
 		this.status = status;
 	}
-	
-	
-	
+
 }
