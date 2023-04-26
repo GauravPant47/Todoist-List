@@ -6,4 +6,6 @@ import net.Todoist.model.TodoistData;
 
 public interface TodoistService {
 	List<TodoistData> findAllListData();
+
+	TodoistData saveItem(TodoistData todoistData);
 }

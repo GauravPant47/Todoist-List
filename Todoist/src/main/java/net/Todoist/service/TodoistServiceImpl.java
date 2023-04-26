@@ -23,4 +23,10 @@ public class TodoistServiceImpl implements TodoistService {
 		return this.todoistRepository.findAll();
 	}
 
+	@Override
+	public TodoistData saveItem(TodoistData todoistData) {
+
+		return todoistRepository.save(todoistData);
+	}
+
 }

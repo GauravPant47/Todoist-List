@@ -12,10 +12,10 @@
 
 	<div class="container">
 		<div class="row">
-			<div class="col-lg-6 col-md-6 col-sm-6 container card justify-content-center mb-3">
+			<div class="col-lg-6 col-md-6 col-sm-6 container  justify-content-center card mb-3">
 				<h1 class="text-center">Updating List Item</h1>
 				<div class="card-body">
-					<form th:action="@{todoist}" th:object="${todoistdata}" method="post">
+					<form th:action="@{todoist}" th:object="${todoistData}" method="post">
 						<div class="form-group mb-3">
 							<label>Task Tital</label>
 							<input type="text" name="taskTital" th:field="*{taskTital}" class="form-control"
