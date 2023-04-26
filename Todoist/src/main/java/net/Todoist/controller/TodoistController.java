@@ -12,11 +12,18 @@ import org.springframework.web.bind.annotation.PostMapping;
 import net.Todoist.model.TodoistData;
 import net.Todoist.service.TodoistService;
 
+
 @Controller
 public class TodoistController {
 
-	@Autowired
+//	@Autowired
 	private TodoistService todoistService;
+	
+
+	public TodoistController(TodoistService todoistService) {
+		super();
+		this.todoistService = todoistService;
+	}
 
 	@GetMapping("/todoist")
 	public List<TodoistData> findingAList() {

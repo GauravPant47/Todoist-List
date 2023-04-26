@@ -15,7 +15,7 @@ public class TodoistData {
 	@Column(name = "task_number")
 	private int taskNumber;
 
-	@Column(name = "task_tital")
+	@Column(name = "task_tital", nullable = false)
 	private String taskTital;
 
 	@Column(name = "add_Task")
