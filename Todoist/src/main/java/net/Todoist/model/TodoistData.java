@@ -13,7 +13,7 @@ public class TodoistData {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name = "task_number")
-	private int taskNumber;
+	private long taskNumber;
 
 	@Column(name = "task_tital", nullable = false)
 	private String taskTital;
@@ -35,11 +35,11 @@ public class TodoistData {
 		this.status = status;
 	}
 
-	public int getTaskNumber() {
+	public long getTaskNumber() {
 		return taskNumber;
 	}
 
-	public void setTaskNumber(int taskNumber) {
+	public void setTaskNumber(long taskNumber) {
 		this.taskNumber = taskNumber;
 	}
 

@@ -15,7 +15,6 @@ public class TodoistServiceImpl implements TodoistService {
 
 //	@Autowired
 	private TodoistRepository todoistRepository;
-	
 
 	public TodoistServiceImpl(TodoistRepository todoistRepository) {
 		super();
@@ -29,6 +28,16 @@ public class TodoistServiceImpl implements TodoistService {
 
 	@Override
 	public TodoistData saveItem(TodoistData todoistData) {
+		return todoistRepository.save(todoistData);
+	}
+
+	@Override
+	public TodoistData getListItemById(Long id) {
+		return todoistRepository.findById(id).get();
+	}
+
+	@Override
+	public TodoistData updateListItem(TodoistData todoistData) {
 		return todoistRepository.save(todoistData);
 	}
 
