@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html xmlns:th="http://www.thymeleaf.org">
 
 <head>
 <meta charset="UTF-8">
@@ -49,16 +49,17 @@
     </nav>
 
     <!-- Navbar End -->
+    
+    <!-- Updating List item -->
 	<div class="container">
 		<div class="row">
 			<div
 				class="col-lg-6 col-md-6 col-sm-6 container  justify-content-center card mb-3">
 				<h1 class="text-center">Updating List Item</h1>
 				<div class="card-body">
-					<form th:action="@{todoist}" th:object="${todoistData}"
-						method="post">
+					<form th:action="@{/todoist}" th:object="${todoistData}" method="post">
 						<div class="form-group mb-3">
-							<label>Task Tital</label> 
+							<label>Task Tital</label>
 							<input 
 								type="text" 
 								name="taskTital"
@@ -84,7 +85,7 @@
 								class="form-control"
 								placeholder="Enter Status" />
 						</div>
-						<div class="mb-3 box-footer">
+						<div class="box-footer mb-3">
 							<button type="submit" class="btn btn-primary">Submit</button>
 						</div>
 

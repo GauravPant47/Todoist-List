@@ -25,10 +25,16 @@ public class TodoistController {
 		this.todoistService = todoistService;
 	}
 
+//	@GetMapping("/todoist")
+//	public List<TodoistData> findingAList() {
+//		List<TodoistData> todoist = todoistService.findAllListData();
+//		return todoist;
+//	}
+	
 	@GetMapping("/todoist")
-	public List<TodoistData> findingAList() {
-		List<TodoistData> todoist = todoistService.findAllListData();
-		return todoist;
+	public String allDataList(Model model) {
+		model.addAttribute("todoist",todoistService.findAllListData());
+		return "todoist";
 	}
 
 	@GetMapping("/todoist/listItem")

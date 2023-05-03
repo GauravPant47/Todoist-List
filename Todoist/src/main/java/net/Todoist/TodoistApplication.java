@@ -18,18 +18,19 @@ public class TodoistApplication implements CommandLineRunner {
 	@Autowired
 	private TodoistRepository todoistRepository;
 
-	@Override
+//	@Override
 	public void run(String... args) throws Exception {
-
-		TodoistData todoistData1 = new TodoistData("Todoist Project","working", "Create a todoist project using spring boot");
-		todoistRepository.save(todoistData1);
-		
-		TodoistData todoistData2 = new TodoistData("Mobile","working", "Baying a mobile");
-		todoistRepository.save(todoistData2);
-		
-		TodoistData todoistData3 = new TodoistData("Banking Project","working", "Create a Banking Project using spring boot");
-		todoistRepository.save(todoistData3);
-		
+//
+//		TodoistData todoistData1 = new TodoistData("Todoist Project","working", "Create a todoist project using spring boot");
+//		todoistRepository.save(todoistData1);
+//		
+//		TodoistData todoistData2 = new TodoistData("Mobile","working", "Baying a mobile");
+//		todoistRepository.save(todoistData2);
+//		
+//		TodoistData todoistData3 = new TodoistData("Banking Project","working", "Create a Banking Project using spring boot");
+//		todoistRepository.save(todoistData3);
+//		
 	}
+
 
 }
